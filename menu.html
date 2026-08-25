@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu | Golden Sage Café & Kitchen</title>
+  <meta name="description" content="Browse the seasonal menu at Golden Sage Café & Kitchen — starters, mains, wood-fired dishes, desserts, and drinks made from locally sourced ingredients." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="https://placehold.co/64x64/D4A373/FEFAE0?text=GS" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================== NAVIGATION =========================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">GS</span>
+        Golden Sage
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservations.html" class="btn btn-primary btn-sm nav-cta">Book a Table</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================== PAGE HEADER =========================== -->
+    <section class="page-header" data-parallax-section>
+      <img class="hero-bg" data-parallax="0.3" src="https://picsum.photos/seed/goldensage-menu-header/1800/900" alt="Table spread of seasonal dishes at Golden Sage" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Our Menu</p>
+        <h1>Dishes Shaped by the Season</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Menu</p>
+      </div>
+    </section>
+
+    <!-- =========================== MENU INTRO =========================== -->
+    <section class="section bg-cornsilk" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="section-header center reveal" style="margin-inline:auto;">
+          <p class="eyebrow">Late Summer Menu</p>
+          <h2>Updated Weekly with the Harvest</h2>
+          <p style="text-align:center;">
+            Prices and dishes shift as our farm partners' harvests change. Ask your server about
+            tonight's chef specials — they rarely make it onto the printed page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== MENU TABS + CATEGORIES =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container">
+
+        <!-- Tab buttons — JS toggles which .menu-category is visible -->
+        <div class="menu-tabs reveal">
+          <button class="menu-tab active" data-target="cat-starters">Starters</button>
+          <button class="menu-tab" data-target="cat-mains">Mains</button>
+          <button class="menu-tab" data-target="cat-woodfired">Wood-Fired</button>
+          <button class="menu-tab" data-target="cat-desserts">Desserts</button>
+          <button class="menu-tab" data-target="cat-drinks">Drinks</button>
+        </div>
+
+        <!-- ---------- STARTERS ---------- -->
+        <div class="menu-category active" id="cat-starters">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-burrata/200/200" alt="Burrata with charred peaches" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Burrata & Charred Peach</h4><span class="menu-item-price">$14</span></div>
+                <p class="menu-item-desc">Local burrata, grilled peaches, basil oil, sea salt, toasted sourdough.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegetarian</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-soup/200/200" alt="Roasted tomato soup" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Roasted Tomato & Basil Soup</h4><span class="menu-item-price">$11</span></div>
+                <p class="menu-item-desc">Slow-roasted heirloom tomatoes, cream, garden basil, olive oil drizzle.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegan Option</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-tartare/200/200" alt="Beet tartare" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Golden Beet Tartare</h4><span class="menu-item-price">$13</span></div>
+                <p class="menu-item-desc">Diced golden beets, capers, shallot, whole grain mustard, rye crisp.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegan</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-shrimp/200/200" alt="Chili lime shrimp skewers" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Chili-Lime Shrimp Skewers</h4><span class="menu-item-price">$16</span></div>
+                <p class="menu-item-desc">Wild-caught shrimp, chili-lime glaze, cilantro, charred corn salsa.</p>
+                <div class="menu-item-tags"><span class="tag spicy">Spicy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- MAINS ---------- -->
+        <div class="menu-category" id="cat-mains">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-grainbowl/200/200" alt="Stone-ground grain bowl" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Harvest Grain Bowl</h4><span class="menu-item-price">$19</span></div>
+                <p class="menu-item-desc">Farro, roasted squash, kale, pickled onion, tahini, pumpkin seeds.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegan</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-chicken/200/200" alt="Herb roasted chicken" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Herb-Roasted Half Chicken</h4><span class="menu-item-price">$26</span></div>
+                <p class="menu-item-desc">Free-range chicken, rosemary jus, roasted fingerlings, seasonal greens.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-salmon/200/200" alt="Cedar plank salmon" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Cedar Plank Salmon</h4><span class="menu-item-price">$28</span></div>
+                <p class="menu-item-desc">Wild salmon, maple glaze, charred asparagus, herb butter.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-pasta/200/200" alt="Wild mushroom pappardelle" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Wild Mushroom Pappardelle</h4><span class="menu-item-price">$22</span></div>
+                <p class="menu-item-desc">House-made pasta, forest mushrooms, thyme cream, aged parmesan.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegetarian</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- WOOD-FIRED ---------- -->
+        <div class="menu-category" id="cat-woodfired">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-flatbread/200/200" alt="Wood-fired flatbread" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Fig & Prosciutto Flatbread</h4><span class="menu-item-price">$17</span></div>
+                <p class="menu-item-desc">Wood-fired dough, fig jam, prosciutto, arugula, shaved parmesan.</p>
+                <div class="menu-item-tags"><span class="tag">Wood-Fired</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-steak/200/200" alt="Wood-fired ribeye" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Wood-Fired Ribeye</h4><span class="menu-item-price">$38</span></div>
+                <p class="menu-item-desc">14oz ribeye, garlic confit, charred greens, red wine reduction.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-cauliflower/200/200" alt="Whole roasted cauliflower" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Whole Roasted Cauliflower</h4><span class="menu-item-price">$21</span></div>
+                <p class="menu-item-desc">Wood-fired whole cauliflower, harissa yogurt, herb oil, dukkah.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegan</span> <span class="tag spicy">Mild Spice</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-trout/200/200" alt="Wood-fired river trout" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Whole River Trout</h4><span class="menu-item-price">$29</span></div>
+                <p class="menu-item-desc">Wood-fired trout, lemon, capers, brown butter, roasted potatoes.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- DESSERTS ---------- -->
+        <div class="menu-category" id="cat-desserts">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-tart/200/200" alt="Stone fruit tart" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Stone Fruit Galette</h4><span class="menu-item-price">$10</span></div>
+                <p class="menu-item-desc">Flaky pastry, seasonal stone fruit, vanilla bean ice cream.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegetarian</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-chocolate/200/200" alt="Olive oil chocolate cake" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Olive Oil Chocolate Cake</h4><span class="menu-item-price">$11</span></div>
+                <p class="menu-item-desc">Dark chocolate, extra virgin olive oil, sea salt, whipped mascarpone.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-panna/200/200" alt="Honey panna cotta" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Local Honey Panna Cotta</h4><span class="menu-item-price">$9</span></div>
+                <p class="menu-item-desc">Silky panna cotta, wildflower honey, toasted almond, thyme.</p>
+                <div class="menu-item-tags"><span class="tag">Gluten-Free</span></div>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-icecream/200/200" alt="Seasonal sorbet trio" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Seasonal Sorbet Trio</h4><span class="menu-item-price">$9</span></div>
+                <p class="menu-item-desc">Three rotating fruit sorbets made fresh from the week's harvest.</p>
+                <div class="menu-item-tags"><span class="tag vegan">Vegan</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- DRINKS ---------- -->
+        <div class="menu-category" id="cat-drinks">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-wine/200/200" alt="Glass of regional white wine" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Valley White Blend, Glass</h4><span class="menu-item-price">$12</span></div>
+                <p class="menu-item-desc">Bright, mineral-driven white from a family vineyard 20 miles east.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-cider/200/200" alt="Craft cider" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Cedar Falls Dry Cider</h4><span class="menu-item-price">$8</span></div>
+                <p class="menu-item-desc">Locally pressed apples, dry-fermented, served over ice.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-lemonade/200/200" alt="Herb lemonade" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Garden Herb Lemonade</h4><span class="menu-item-price">$6</span></div>
+                <p class="menu-item-desc">Fresh lemon, mint and basil from our patio garden, light honey.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="https://picsum.photos/seed/dish-coffee/200/200" alt="Pour-over coffee" />
+              <div class="menu-item-body">
+                <div class="menu-item-title"><h4>Single-Origin Pour Over</h4><span class="menu-item-price">$5</span></div>
+                <p class="menu-item-desc">Rotating single-origin beans roasted locally, brewed to order.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================== DIETARY NOTE / CTA =========================== -->
+    <section class="section bg-olive">
+      <div class="container">
+        <div class="cta-banner reveal" style="background: linear-gradient(120deg, var(--sage-dark), var(--sage)); color: var(--ink);">
+          <h2 style="color: var(--ink);">Have a Dietary Need?</h2>
+          <p style="color: var(--ink-soft);">Let us know when booking — our kitchen happily adapts most dishes for allergies and preferences.</p>
+          <a href="reservations.html" class="btn btn-primary">Reserve & Add a Note</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">GS</span>
+          Golden Sage
+        </a>
+        <p class="footer-about">
+          Farm-to-table dining in the heart of Cedar Falls. Seasonal menus, warm hospitality, and
+          a dining room built for slowing down.
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X">x</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Visit</h4>
+        <ul class="footer-links">
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+          <li><a href="tel:+15415550192">(541) 555-0192</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours-wrap">
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span><span>8:00am – 9:00pm</span></li>
+          <li><span>Sat – Sun</span><span>8:00am – 10:00pm</span></li>
+          <li><span>Kitchen closes</span><span>30 min before close</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Golden Sage Café & Kitchen. All rights reserved.</p>
+      <p>214 Meadowbrook Lane, Cedar Falls, OR 97401</p>
+    </div>
+  </footer>
+
+  <!-- =========================== STICKY BOTTOM CTA BAR =========================== -->
+  <div class="sticky-cta-bar">
+    <div class="container">
+      <div class="sticky-quick-links">
+        <a href="tel:+15415550192" aria-label="Call Golden Sage Café">
+          <span class="icon-only">📞</span><span class="label">📞 (541) 555-0192</span>
+        </a>
+        <a href="contact.html#map" aria-label="Get directions">
+          <span class="icon-only">📍</span><span class="label">📍 Directions</span>
+        </a>
+        <a href="menu.html" aria-label="View menu">
+          <span class="icon-only">📋</span><span class="label">📋 Menu</span>
+        </a>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

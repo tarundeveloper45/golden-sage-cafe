@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | Golden Sage Café & Kitchen</title>
+  <meta name="description" content="Reserve a table at Golden Sage Café & Kitchen in Cedar Falls. Choose your date, time, and party size and we'll confirm by email." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="https://placehold.co/64x64/D4A373/FEFAE0?text=GS" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================== NAVIGATION =========================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">GS</span>
+        Golden Sage
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservations.html" class="btn btn-primary btn-sm nav-cta">Book a Table</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================== PAGE HEADER =========================== -->
+    <section class="page-header" data-parallax-section>
+      <img class="hero-bg" data-parallax="0.3" src="https://picsum.photos/seed/goldensage-res-header/1800/900" alt="Table set for two at Golden Sage Café" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Reservations</p>
+        <h1>Reserve Your Table</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Reservations</p>
+      </div>
+    </section>
+
+    <!-- =========================== RESERVATION FORM =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container split">
+
+        <div class="split-content reveal">
+          <p class="eyebrow">Book Online</p>
+          <h2>Tell Us About Your Visit</h2>
+          <p>
+            Fill out the form and our host team will confirm your table by email within a few
+            hours. For same-day requests or parties over ten, please call us directly at
+            <a href="tel:+15415550192" style="color: var(--bronze-dark); font-weight: 600;">(541) 555-0192</a>.
+          </p>
+
+          <form id="reservation-form" novalidate style="margin-top: var(--space-md);">
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="res-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="res-name" name="name" placeholder="Jordan Lee" required />
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="res-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="res-email" name="email" placeholder="jordan@email.com" required />
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="res-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="res-phone" name="phone" placeholder="(541) 555-0100" required />
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="res-guests">Party Size <span class="required">*</span></label>
+                <select id="res-guests" name="guests" required>
+                  <option value="">Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7+">7+ Guests (we'll call to confirm)</option>
+                </select>
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="res-date">Date <span class="required">*</span></label>
+                <input type="date" id="res-date" name="date" required />
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="res-time">Time <span class="required">*</span></label>
+                <select id="res-time" name="time" required>
+                  <option value="">Select time</option>
+                  <option value="8:00 AM">8:00 AM</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                </select>
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-group full">
+                <label for="res-occasion">Occasion (optional)</label>
+                <select id="res-occasion" name="occasion">
+                  <option value="">None in particular</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="business">Business Meal</option>
+                  <option value="date">Date Night</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="res-notes">Special Requests</label>
+                <textarea id="res-notes" name="notes" placeholder="Allergies, seating preferences, accessibility needs, etc."></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: var(--space-md);">Request Reservation</button>
+            <p class="form-status" role="alert"></p>
+          </form>
+        </div>
+
+        <div class="split-media reveal reveal-delay-1">
+          <img src="https://picsum.photos/seed/goldensage-reservation/900/1100" alt="Candlelit table set for an evening reservation at Golden Sage" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== POLICY INFO =========================== -->
+    <section class="section bg-olive">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="eyebrow">Good to Know</p>
+          <h2>Reservation Policies</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">⏱️</div>
+            <h3>Hold Time</h3>
+            <p>Tables are held for 15 minutes past your reservation time before being released.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">👥</div>
+            <h3>Large Parties</h3>
+            <p>Groups of 8 or more should call ahead — we'll help plan a shared or set menu.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">🐾</div>
+            <h3>Patio & Pets</h3>
+            <p>Leashed, well-behaved dogs are welcome on our garden patio seating.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">✉️</div>
+            <h3>Confirmation</h3>
+            <p>You'll receive an email confirmation; please reply if plans change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">GS</span>
+          Golden Sage
+        </a>
+        <p class="footer-about">
+          Farm-to-table dining in the heart of Cedar Falls. Seasonal menus, warm hospitality, and
+          a dining room built for slowing down.
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X">x</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Visit</h4>
+        <ul class="footer-links">
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+          <li><a href="tel:+15415550192">(541) 555-0192</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours-wrap">
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span><span>8:00am – 9:00pm</span></li>
+          <li><span>Sat – Sun</span><span>8:00am – 10:00pm</span></li>
+          <li><span>Kitchen closes</span><span>30 min before close</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Golden Sage Café & Kitchen. All rights reserved.</p>
+      <p>214 Meadowbrook Lane, Cedar Falls, OR 97401</p>
+    </div>
+  </footer>
+
+  <!-- =========================== STICKY BOTTOM CTA BAR =========================== -->
+  <div class="sticky-cta-bar">
+    <div class="container">
+      <div class="sticky-quick-links">
+        <a href="tel:+15415550192" aria-label="Call Golden Sage Café">
+          <span class="icon-only">📞</span><span class="label">📞 (541) 555-0192</span>
+        </a>
+        <a href="contact.html#map" aria-label="Get directions">
+          <span class="icon-only">📍</span><span class="label">📍 Directions</span>
+        </a>
+        <a href="menu.html" aria-label="View menu">
+          <span class="icon-only">📋</span><span class="label">📋 Menu</span>
+        </a>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

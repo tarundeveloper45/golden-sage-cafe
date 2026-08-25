@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Sage Café & Kitchen | Farm-to-Table Dining in Cedar Falls</title>
+  <meta name="description" content="Golden Sage Café & Kitchen is a farm-to-table restaurant in Cedar Falls serving seasonal, organic dishes in a warm, natural setting. Reserve your table today." />
+
+  <!-- Google Fonts: Playfair Display for headings, Jost for body copy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="https://placehold.co/64x64/D4A373/FEFAE0?text=GS" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================== NAVIGATION =========================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">GS</span>
+        Golden Sage
+      </a>
+
+      <!-- Primary nav links; JS adds/removes "open" class for mobile -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservations.html" class="btn btn-primary btn-sm nav-cta">Book a Table</a>
+      </nav>
+
+      <!-- Hamburger toggle, visible only on small screens via CSS -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================== HERO =========================== -->
+    <section class="hero" data-parallax-section>
+      <img
+        class="hero-bg"
+        data-parallax="0.35"
+        src="https://picsum.photos/seed/goldensage-hero/1800/1200"
+        alt="Warm, sunlit dining room at Golden Sage Café with wooden tables and hanging greenery" />
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Cedar Falls, Oregon</p>
+        <h1>Seasonal Cooking, Rooted in the Land</h1>
+        <p>
+          Golden Sage Café & Kitchen brings together locally grown produce, slow-cooked
+          traditions, and a warm dining room built for lingering conversations.
+        </p>
+        <div class="hero-actions">
+          <a href="reservations.html" class="btn btn-primary">Reserve a Table</a>
+          <a href="menu.html" class="btn btn-light">View Our Menu</a>
+        </div>
+      </div>
+
+      <a href="#welcome" class="hero-scroll-cue">
+        Scroll
+        <span></span>
+      </a>
+    </section>
+
+    <!-- =========================== WELCOME / INTRO =========================== -->
+    <section class="section bg-cornsilk" id="welcome">
+      <div class="container split">
+        <div class="split-media reveal">
+          <img src="https://picsum.photos/seed/goldensage-chef/900/1000" alt="Head chef plating a seasonal dish in the Golden Sage kitchen" />
+        </div>
+        <div class="split-content reveal reveal-delay-1">
+          <p class="eyebrow">Our Welcome</p>
+          <h2>A Table Set with Honest, Seasonal Food</h2>
+          <p>
+            Since 2014, Golden Sage has partnered with growers across the Meadowbrook Valley to
+            bring produce from field to plate within a day of harvest. Our menu shifts with the
+            seasons, but our promise stays the same: thoughtful food, served without pretense, in
+            a space that feels like home.
+          </p>
+          <p>
+            Whether you're joining us for a quiet weekday breakfast or a long Sunday dinner with
+            family, our kitchen and front-of-house team are here to make the visit feel unhurried
+            and genuine.
+          </p>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== FEATURES / WHY US =========================== -->
+    <section class="section bg-olive">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="eyebrow">Why Guests Return</p>
+          <h2>What Makes Golden Sage Different</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">🌾</div>
+            <h3>Farm-to-Table</h3>
+            <p>Produce sourced from six partner farms within 40 miles of our kitchen door.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">👩‍🍳</div>
+            <h3>Chef-Led Menus</h3>
+            <p>A seasonal menu rewritten every quarter by our in-house culinary team.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">🌿</div>
+            <h3>Warm, Natural Space</h3>
+            <p>Reclaimed wood, linen, and greenery designed for slow, comfortable evenings.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">🍷</div>
+            <h3>Thoughtful Pairings</h3>
+            <p>A boutique wine and cider list curated by our sommelier for every dish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== MENU PREVIEW =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container split reverse">
+        <div class="split-media reveal">
+          <img src="https://picsum.photos/seed/goldensage-dish/900/1000" alt="Golden roasted vegetable dish with herb garnish served on ceramic plate" />
+        </div>
+        <div class="split-content reveal reveal-delay-1">
+          <p class="eyebrow">From the Kitchen</p>
+          <h2>A Menu That Follows the Harvest</h2>
+          <p>
+            Expect wood-fired mains, stone-ground grain bowls, and a rotating list of small
+            plates built around whatever our farm partners bring in that morning. Vegetarian,
+            vegan, and gluten-conscious options are clearly marked throughout.
+          </p>
+          <ul class="values-list">
+            <li class="value-item">
+              <span class="value-icon">🥖</span>
+              <span>Bread and pastries baked fresh daily in-house.</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">🔥</span>
+              <span>Wood-fired oven mains, finished with garden herbs.</span>
+            </li>
+          </ul>
+          <a href="menu.html" class="btn btn-primary">Explore Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== STATS STRIP =========================== -->
+    <section class="section bg-sage">
+      <div class="container">
+        <div class="stats-strip">
+          <div class="reveal">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Serving Cedar Falls</div>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Local Partner Farms</div>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="stat-number">40+</div>
+            <div class="stat-label">Seasonal Menu Items</div>
+          </div>
+          <div class="reveal reveal-delay-3">
+            <div class="stat-number">4.8★</div>
+            <div class="stat-label">Average Guest Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== TESTIMONIALS CAROUSEL =========================== -->
+    <section class="section bg-papaya testimonials-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="eyebrow">Guest Stories</p>
+          <h2>What Our Guests Are Saying</h2>
+        </div>
+
+        <div class="testimonial-track-wrap reveal">
+          <div class="testimonial-track">
+
+            <article class="testimonial-slide">
+              <p class="testimonial-stars">★★★★★</p>
+              <p class="testimonial-quote">"Every dish felt like it was grown ten minutes away — because it was. The roasted squash bowl might be the best thing I've eaten this year."</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/guest-1/100/100" alt="Portrait of guest Maria Ibarra" />
+                <div>
+                  <div class="testimonial-author-name">Maria Ibarra</div>
+                  <div class="testimonial-author-role">Local Guide, Cedar Falls</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide">
+              <p class="testimonial-stars">★★★★★</p>
+              <p class="testimonial-quote">"We celebrated our anniversary here and the staff quietly made it feel special without ever being fussy about it. We'll be back every year."</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/guest-2/100/100" alt="Portrait of guest James Okafor" />
+                <div>
+                  <div class="testimonial-author-name">James Okafor</div>
+                  <div class="testimonial-author-role">Repeat Guest</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide">
+              <p class="testimonial-stars">★★★★★</p>
+              <p class="testimonial-quote">"Golden Sage is our go-to for Sunday brunch. The sourdough alone is worth the drive from Portland."</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/guest-3/100/100" alt="Portrait of guest Priya Nair" />
+                <div>
+                  <div class="testimonial-author-name">Priya Nair</div>
+                  <div class="testimonial-author-role">Food Blogger</div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-arrow prev" aria-label="Previous testimonial">←</button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-arrow next" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== GALLERY PREVIEW =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="eyebrow">A Glimpse Inside</p>
+          <h2>Moments from Golden Sage</h2>
+        </div>
+
+        <div class="gallery-grid" style="grid-template-columns: repeat(4, 1fr);">
+          <a href="gallery.html" class="gallery-item show reveal">
+            <img src="https://picsum.photos/seed/gallery-prev-1/500/500" alt="Dining room seating with warm lighting" />
+            <div class="gallery-overlay"><span>Dining Room</span></div>
+          </a>
+          <a href="gallery.html" class="gallery-item show reveal reveal-delay-1">
+            <img src="https://picsum.photos/seed/gallery-prev-2/500/500" alt="Plated seasonal dish" />
+            <div class="gallery-overlay"><span>Seasonal Plates</span></div>
+          </a>
+          <a href="gallery.html" class="gallery-item show reveal reveal-delay-2">
+            <img src="https://picsum.photos/seed/gallery-prev-3/500/500" alt="Outdoor patio seating area" />
+            <div class="gallery-overlay"><span>Garden Patio</span></div>
+          </a>
+          <a href="gallery.html" class="gallery-item show reveal reveal-delay-3">
+            <img src="https://picsum.photos/seed/gallery-prev-4/500/500" alt="Chef preparing food in the open kitchen" />
+            <div class="gallery-overlay"><span>Our Kitchen</span></div>
+          </a>
+        </div>
+
+        <div style="text-align:center; margin-top: var(--space-lg);" class="reveal">
+          <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== CTA BANNER =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>Ready to Join Us at the Table?</h2>
+          <p>Tables are limited on weekends — reserve yours a few days ahead to be safe.</p>
+          <a href="reservations.html" class="btn btn-light">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">GS</span>
+          Golden Sage
+        </a>
+        <p class="footer-about">
+          Farm-to-table dining in the heart of Cedar Falls. Seasonal menus, warm hospitality, and
+          a dining room built for slowing down.
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X">x</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Visit</h4>
+        <ul class="footer-links">
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+          <li><a href="tel:+15415550192">(541) 555-0192</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours-wrap">
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span><span>8:00am – 9:00pm</span></li>
+          <li><span>Sat – Sun</span><span>8:00am – 10:00pm</span></li>
+          <li><span>Kitchen closes</span><span>30 min before close</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Golden Sage Café & Kitchen. All rights reserved.</p>
+      <p>214 Meadowbrook Lane, Cedar Falls, OR 97401</p>
+    </div>
+  </footer>
+
+  <!-- =========================== STICKY BOTTOM CTA BAR =========================== -->
+  <div class="sticky-cta-bar">
+    <div class="container">
+      <div class="sticky-quick-links">
+        <a href="tel:+15415550192" aria-label="Call Golden Sage Café">
+          <span class="icon-only">📞</span><span class="label">📞 (541) 555-0192</span>
+        </a>
+        <a href="contact.html#map" aria-label="Get directions">
+          <span class="icon-only">📍</span><span class="label">📍 Directions</span>
+        </a>
+        <a href="menu.html" aria-label="View menu">
+          <span class="icon-only">📋</span><span class="label">📋 Menu</span>
+        </a>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

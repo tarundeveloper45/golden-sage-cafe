@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Golden Sage Café & Kitchen</title>
+  <meta name="description" content="A photo tour of Golden Sage Café & Kitchen — our dining room, garden patio, seasonal dishes, and the kitchen team behind them." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="https://placehold.co/64x64/D4A373/FEFAE0?text=GS" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================== NAVIGATION =========================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">GS</span>
+        Golden Sage
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="reservations.html" class="btn btn-primary btn-sm nav-cta">Book a Table</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================== PAGE HEADER =========================== -->
+    <section class="page-header" data-parallax-section>
+      <img class="hero-bg" data-parallax="0.3" src="https://picsum.photos/seed/goldensage-gallery-header/1800/900" alt="Collage-style photo of the Golden Sage dining room" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Gallery</p>
+        <h1>A Look Around Golden Sage</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+      </div>
+    </section>
+
+    <!-- =========================== GALLERY =========================== -->
+    <section class="section bg-cornsilk">
+      <div class="container">
+
+        <!-- Filter buttons — JS toggles .show on matching .gallery-item -->
+        <div class="gallery-filters reveal">
+          <button class="menu-tab active" data-filter="all">All</button>
+          <button class="menu-tab" data-filter="dining">Dining Room</button>
+          <button class="menu-tab" data-filter="food">Food</button>
+          <button class="menu-tab" data-filter="patio">Patio</button>
+          <button class="menu-tab" data-filter="kitchen">Kitchen</button>
+        </div>
+
+        <!-- Each item opens the lightbox on click; data-caption feeds the lightbox caption -->
+        <div class="gallery-grid">
+          <div class="gallery-item show reveal" data-category="dining" data-caption="Our main dining room, set for evening service">
+            <img src="https://picsum.photos/seed/gallery-1/600/600" alt="Golden Sage dining room set for evening service" />
+            <div class="gallery-overlay"><span>Dining Room</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-1" data-category="food" data-caption="Wood-fired ribeye with charred greens">
+            <img src="https://picsum.photos/seed/gallery-2/600/600" alt="Wood-fired ribeye plated with charred greens" />
+            <div class="gallery-overlay"><span>Wood-Fired Ribeye</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-2" data-category="patio" data-caption="String-lit garden patio at dusk">
+            <img src="https://picsum.photos/seed/gallery-3/600/600" alt="Garden patio seating strung with warm lights at dusk" />
+            <div class="gallery-overlay"><span>Garden Patio</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-3" data-category="kitchen" data-caption="Chef Elena plating a seasonal dish">
+            <img src="https://picsum.photos/seed/gallery-4/600/600" alt="Chef Elena Whitfield plating a seasonal dish in the kitchen" />
+            <div class="gallery-overlay"><span>Behind the Line</span></div>
+          </div>
+
+          <div class="gallery-item show reveal" data-category="food" data-caption="Burrata with charred peaches and basil oil">
+            <img src="https://picsum.photos/seed/gallery-5/600/600" alt="Burrata starter with charred peaches and basil oil" />
+            <div class="gallery-overlay"><span>Burrata & Peach</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-1" data-category="dining" data-caption="Window-side tables during golden hour">
+            <img src="https://picsum.photos/seed/gallery-6/600/600" alt="Window-side dining tables lit by golden hour sunlight" />
+            <div class="gallery-overlay"><span>Golden Hour</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-2" data-category="patio" data-caption="Herb garden bordering the patio seating">
+            <img src="https://picsum.photos/seed/gallery-7/600/600" alt="Herb garden bordering the outdoor patio seating area" />
+            <div class="gallery-overlay"><span>Herb Garden</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-3" data-category="kitchen" data-caption="Fresh sourdough loaves cooling on the rack">
+            <img src="https://picsum.photos/seed/gallery-8/600/600" alt="Fresh sourdough loaves cooling on a wire rack" />
+            <div class="gallery-overlay"><span>Morning Bake</span></div>
+          </div>
+
+          <div class="gallery-item show reveal" data-category="food" data-caption="Stone fruit galette with vanilla ice cream">
+            <img src="https://picsum.photos/seed/gallery-9/600/600" alt="Stone fruit galette served with vanilla bean ice cream" />
+            <div class="gallery-overlay"><span>Stone Fruit Galette</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-1" data-category="dining" data-caption="Communal table set for a private event">
+            <img src="https://picsum.photos/seed/gallery-10/600/600" alt="Long communal table set for a private dining event" />
+            <div class="gallery-overlay"><span>Private Events</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-2" data-category="patio" data-caption="Evening cocktail service on the patio">
+            <img src="https://picsum.photos/seed/gallery-11/600/600" alt="Evening cocktail service on the outdoor patio" />
+            <div class="gallery-overlay"><span>Evening on the Patio</span></div>
+          </div>
+          <div class="gallery-item show reveal reveal-delay-3" data-category="kitchen" data-caption="Wood-fired oven mid-service">
+            <img src="https://picsum.photos/seed/gallery-12/600/600" alt="Wood-fired oven glowing during dinner service" />
+            <div class="gallery-overlay"><span>The Wood-Fired Oven</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== CTA =========================== -->
+    <section class="section bg-sage">
+      <div class="container">
+        <div class="cta-banner reveal" style="background: linear-gradient(120deg, var(--bronze), var(--bronze-dark));">
+          <h2>See It in Person</h2>
+          <p>Photos only tell half the story — come taste the rest.</p>
+          <a href="reservations.html" class="btn btn-light">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================== LIGHTBOX MODAL =========================== -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close gallery">✕</button>
+      <button class="lightbox-prev" aria-label="Previous image">←</button>
+      <img src="" alt="" />
+      <button class="lightbox-next" aria-label="Next image">→</button>
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- =========================== FOOTER =========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">GS</span>
+          Golden Sage
+        </a>
+        <p class="footer-about">
+          Farm-to-table dining in the heart of Cedar Falls. Seasonal menus, warm hospitality, and
+          a dining room built for slowing down.
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X">x</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Visit</h4>
+        <ul class="footer-links">
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+          <li><a href="tel:+15415550192">(541) 555-0192</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours-wrap">
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Mon – Fri</span><span>8:00am – 9:00pm</span></li>
+          <li><span>Sat – Sun</span><span>8:00am – 10:00pm</span></li>
+          <li><span>Kitchen closes</span><span>30 min before close</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Golden Sage Café & Kitchen. All rights reserved.</p>
+      <p>214 Meadowbrook Lane, Cedar Falls, OR 97401</p>
+    </div>
+  </footer>
+
+  <!-- =========================== STICKY BOTTOM CTA BAR =========================== -->
+  <div class="sticky-cta-bar">
+    <div class="container">
+      <div class="sticky-quick-links">
+        <a href="tel:+15415550192" aria-label="Call Golden Sage Café">
+          <span class="icon-only">📞</span><span class="label">📞 (541) 555-0192</span>
+        </a>
+        <a href="contact.html#map" aria-label="Get directions">
+          <span class="icon-only">📍</span><span class="label">📍 Directions</span>
+        </a>
+        <a href="menu.html" aria-label="View menu">
+          <span class="icon-only">📋</span><span class="label">📋 Menu</span>
+        </a>
+      </div>
+      <a href="reservations.html" class="btn btn-primary btn-sm">Book a Table</a>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
